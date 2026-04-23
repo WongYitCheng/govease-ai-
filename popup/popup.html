@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 350px; padding: 16px; font-family: Arial; }
+    #chat { height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 8px; margin-bottom: 12px; }
+    .user { text-align: right; color: blue; margin: 8px 0; }
+    .bot { text-align: left; color: green; margin: 8px 0; }
+    #imageInput { margin: 8px 0; }
+    button { background: #0066cc; color: white; border: none; padding: 8px 16px; cursor: pointer; }
+    #status { font-size: 12px; color: gray; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h3>GovEase AI</h3>
+  <div id="chat">
+    <div class="bot">👋 Hi! Send a photo of your IC to get started.</div>
+  </div>
+  <input type="file" id="imageInput" accept="image/jpeg,image/png">
+  <button id="sendBtn">Send IC Photo</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

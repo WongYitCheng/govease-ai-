@@ -1,0 +1,14 @@
+# Create .gitignore file
+echo "# Sensitive files" > .gitignore
+echo "*.key" >> .gitignore
+echo "*.pem" >> .gitignore
+echo ".env" >> .gitignore
+echo ".env.local" >> .gitignore
+echo "" >> .gitignore
+echo "# OS files" >> .gitignore
+echo ".DS_Store" >> .gitignore
+echo "Thumbs.db" >> .gitignore
+echo "" >> .gitignore
+echo "# Extension build files" >> .gitignore
+echo "*.crx" >> .gitignore
+echo "*.pem" >> .gitignore

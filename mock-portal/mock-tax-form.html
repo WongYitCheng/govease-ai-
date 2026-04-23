@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyTax - LHDN e-Filing</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px; }
+    input, textarea { width: 100%; padding: 8px; margin: 8px 0 16px; border: 1px solid #ccc; border-radius: 4px; }
+    label { font-weight: bold; }
+    button { background: #0066cc; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; }
+    .header { background: #003399; color: white; padding: 16px; margin-bottom: 24px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>MyTax - LHDN e-Filing</h1>
+    <p>Borang BE 2025</p>
+  </div>
+  
+  <form id="taxForm">
+    <label>Nama Penuh (Full Name)</label>
+    <input type="text" id="fullName" placeholder="Enter your full name">
+    
+    <label>No. Kad Pengenalan (IC Number)</label>
+    <input type="text" id="icNumber" placeholder="000000000000">
+    
+    <label>Alamat (Address)</label>
+    <textarea id="address" rows="3" placeholder="Your home address"></textarea>
+    
+    <label>Tarikh Lahir (Date of Birth)</label>
+    <input type="text" id="dob" placeholder="DD/MM/YYYY">
+    
+    <label>No. Telefon (Phone Number)</label>
+    <input type="text" id="phone" placeholder="0123456789">
+    
+    <label>Email</label>
+    <input type="email" id="email" placeholder="you@example.com">
+    
+    <button type="button" onclick="submitForm()">Hantar / Submit</button>
+  </form>
+  
+  <div id="status" style="margin-top: 20px; color: green;"></div>
+  
+  <script>
+    function submitForm() {
+      document.getElementById('status').innerHTML = '✅ Form submitted successfully! (Demo)';
+      setTimeout(() => document.getElementById('status').innerHTML = '', 3000);
+    }
+  </script>
+</body>
+</html>

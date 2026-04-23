@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "GovEase AI",
+  "version": "1.0",
+  "description": "Auto-fill government forms with GLM",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["http://localhost/*", "https://*.gov.my/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/*", "https://*.gov.my/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "GovEase AI"
+  }
+}

@@ -1,0 +1,67 @@
+/* content.css - Styles injected into government portals */
+
+/* Notification that appears on forms */
+.govease-notification {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  padding: 12px 20px !important;
+  border-radius: 12px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  z-index: 999999 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  animation: slideIn 0.3s ease !important;
+  pointer-events: none !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Highlight styles for filled fields */
+.govease-filled {
+  background-color: #e8f5e9 !important;
+  border: 2px solid #4caf50 !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Unfilled highlight */
+.govease-unfilled {
+  background-color: #ffebee !important;
+  border: 2px solid #f44336 !important;
+}
+
+/* Floating action button */
+.govease-fab {
+  position: fixed !important;
+  bottom: 20px !important;
+  left: 20px !important;
+  width: 56px !important;
+  height: 56px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 999999 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+  transition: transform 0.2s !important;
+  font-size: 28px !important;
+  border: none !important;
+}
+
+.govease-fab:hover {
+  transform: scale(1.05) !important;
+}
